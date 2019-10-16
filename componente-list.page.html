@@ -1,0 +1,73 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title> 
+        COMPONENTE - LIST
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <h3>Lista com Texto</h3>
+<ion-list>
+  <ion-item><ion-label>Abacate</ion-label></ion-item>
+  <ion-item><ion-label>Maça</ion-label></ion-item>
+  <ion-item><ion-label>Goiaba</ion-label></ion-item>
+</ion-list>
+
+<h3>Lista Form</h3>
+<ion-list>
+<ion-item>
+  <ion-label>Imput</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+<ion-item>
+    <ion-label>Checkbox</ion-label>
+    <ion-checkbox slot="start" ></ion-checkbox>
+</ion-item>
+
+<ion-item>
+    <ion-label>Toggle</ion-label>
+    <ion-toggle slot="end" ></ion-toggle><!--notificação-->
+</ion-item>
+
+<!--imagem do perfil do usuario-->
+<h1>Lista com avatar</h1>
+<ion-item>
+  <ion-avatar slort="start">
+   <img src="assets/imagem/matheus.jpg">
+  </ion-avatar>
+  <ion-label>
+    <h2>Matheus augusto</h2>
+    <h3>Desenvolvedor Ionic 4</h3>
+    <p>Programador em web </p>
+  </ion-label>
+</ion-item>
+</ion-list>
+
+<h1>Lista com Slide</h1> 
+<ion-list>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-label>Vagas de Emprego</ion-label>
+    </ion-item>
+    <ion-item-options side="end">
+  
+        <ion-item-option color="success" >enviar</ion-item-option>
+   
+  </ion-item-options>
+  <ion-item-options side="start">
+          <ion-item-option color="danger">cancelar</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+
+<h3>Lista com Arry</h3>
+<ion-list>
+  <ion-item *ngFor="let fruta of frutas">
+    <ion-label>{{fruta}}</ion-label>
+  </ion-item>
+</ion-list>
+</ion-content>

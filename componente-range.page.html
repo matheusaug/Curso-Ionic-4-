@@ -1,0 +1,47 @@
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title>
+        COMPONENTES -RANGE
+      </ion-title>
+    </ion-toolbar> 
+  </ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item>
+    <ion-range pin="true" ></ion-range>
+  </ion-item>
+
+  <ion-item>
+    <ion-range pin="true" color="danger"></ion-range>
+  </ion-item>
+
+  <ion-item text-center>
+    <ion-range min="18" max="40" pin="true" color="danger">
+     <ion-label slot="start">Minimo: </ion-label> 
+     <ion-label slot="end">Minimo: </ion-label> 
+    </ion-range>
+  </ion-item>
+
+  <ion-item text-center>
+    <ion-range min="40" max="120" pin="true" color="danger">
+    <ion-icon size="small" slot="start" name="partly-sunny"></ion-icon>
+    <ion-icon size="small" slot="end" name="sunny"></ion-icon>
+    </ion-range>
+  </ion-item>
+
+  <ion-item>
+    <ion-range min="500" max="2000" step="100" snaps="true" pin="true" color="danger"></ion-range>
+  </ion-item>
+
+  <ion-item>
+    <ion-range  min="18" max="30" step="2" snaps="true" pin="true" color="danger"></ion-range>
+  </ion-item>
+</ion-list>
+
+
+</ion-content>

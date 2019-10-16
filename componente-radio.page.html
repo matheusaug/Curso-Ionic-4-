@@ -1,0 +1,56 @@
+
+  <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>
+          COMPONENTES -RADIO
+        </ion-title>
+      </ion-toolbar> 
+    </ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-radio-group>
+   <ion-list-header>
+     <ion-label>Frutas</ion-label>
+   </ion-list-header>
+   <ion-item>
+     <ion-label>Abacate</ion-label>
+     <ion-radio slot="start" value="abacate"></ion-radio>
+   </ion-item>
+   <ion-item>
+      <ion-label>Maça</ion-label>
+      <ion-radio slot="start" value="morango"></ion-radio>
+    </ion-item>
+    <ion-item>
+        <ion-label>morango</ion-label>
+        <ion-radio slot="start" value="morango"></ion-radio>
+    </ion-item>
+ </ion-radio-group>
+</ion-list>
+
+<ion-list>
+    <ion-radio-group>
+     <ion-list-header>
+       <ion-label>Opções</ion-label>
+     </ion-list-header>
+     <ion-item>
+       <ion-label>Default</ion-label>
+       <ion-radio slot="start" checked="true" value="default"></ion-radio>
+     </ion-item>
+     <ion-item>
+        <ion-label>Checked</ion-label>
+        <ion-radio slot="start" checked="true" value="morango"></ion-radio>
+      </ion-item>
+      <ion-item>
+          <ion-label>Checked- disabled</ion-label>
+          <ion-radio slot="start" checked="true" disabled="true" value="morango"></ion-radio>
+      </ion-item>
+   </ion-radio-group>
+  </ion-list>
+
+
+
+</ion-content>

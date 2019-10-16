@@ -1,0 +1,74 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title> 
+        COMPONENTE - INPUT
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+ <!--Input Default-->
+<ion-input ></ion-input>
+
+<!--Input com Valor-->
+<ion-input value="1234"></ion-input>
+
+<!--Input com Placeholder-->
+<ion-input placeholder="Infome seu nome"></ion-input><!-- so aceita texto-->
+
+<!--Input com com icone de limpar-->
+<ion-input clearInput value="curso ionic 4"></ion-input><!--com o botão de limpar o text-->
+
+
+<!--Input com valor numerico-->
+<ion-input type="number" value="1234"></ion-input><!-- so aceita numeros-->
+
+
+<!--Input email-->
+<ion-input type="email" placeholder="Infome seu email"></ion-input><!-- teclado expecifico para email-->
+
+<!--Input Telefone-->
+<ion-input type="tel" placeholder="Informe seu telefone"></ion-input><!--teclado expecifico para ttelefone-->
+
+<!--Input URL-->
+<ion-input type="url" placeholder="Informe seu Url"></ion-input><!--URL, sites, -->
+
+<!--Input search-->
+<ion-input type="search" placeholder="Informe seu search"></ion-input><!--pesquisa-->
+
+<!--Password-->
+<ion-input type="password" placeholder="Informe sua senha"></ion-input>
+
+<ion-item>
+  <ion-label>Sem position</ion-label>
+  <ion-input type="text" placeholder="Informe seu nome"></ion-input>
+</ion-item>
+<ion-item>
+    <ion-label position="floating">floating</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label position="fixed">fixed</ion-label>
+      <ion-input type="text" placeholder="Informe seu ultimo nome"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="stacked">stacked</ion-label>
+        <ion-input type="text" placeholder="Informe seu ultimo nome"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label position="stacked">stacked</ion-label><!--input com color-->
+          <ion-input color="danger" type="text" placeholder="Informe seu ultimo nome"></ion-input>
+        </ion-item>
+
+
+
+
+
+
+
+
+</ion-content>

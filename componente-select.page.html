@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title> 
+      COMPONENTE - SELECT
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list-header>Select Simples</ion-list-header>
+<ion-item>
+  <ion-label>Sexo</ion-label>
+  <ion-select placeholder="Selecione">
+    <ion-select-option value="m">Masculino</ion-select-option>
+    <ion-select-option value="f">Feminino</ion-select-option>
+  </ion-select>
+</ion-item>
+
+<ion-item>
+  <ion-icon name="add" color="dark" >
+  <ion-label>Cor</ion-label>
+</ion-icon>
+  <ion-select  placeholder="Selecione" value="azul" okText="OK" cancelText="Calcelar">
+    <ion-select-option color="dark"  value="pink">Rosa</ion-select-option>
+    <ion-select-option  value="Blue">Azul</ion-select-option>
+    <ion-select-option value="Black">Preto</ion-select-option>
+    <ion-select-option value="orange">Laranja</ion-select-option>
+  </ion-select>
+</ion-item>
+
+<ion-list>
+  <ion-list-header>Select Multiplos</ion-list-header>
+  <ion-item>
+      <ion-icon name="add" color="dark" >
+      <ion-label>Frutas</ion-label>
+    </ion-icon>
+      <ion-select multiple="true" placeholder="Selecione" value="morango" okText="OK" cancelText="Calcelar">
+        <ion-select-option  value="abacaxi">abacaxi</ion-select-option>
+        <ion-select-option  value="morango">morango</ion-select-option>
+        <ion-select-option value="abacaxi">abacaxi</ion-select-option>
+        <ion-select-option value="manga">manga</ion-select-option>
+      </ion-select>
+    </ion-item>
+</ion-list>
+
+
+<ion-list>
+    <ion-list-header>Select Customizados</ion-list-header>
+    <ion-item>
+        <ion-icon name="add" color="dark" >
+        <ion-label>Alerta</ion-label>
+      </ion-icon>
+        <ion-select [interfaceOptions]="customAlertOptions" interface="alert" placeholder="Selecione" value="morango" okText="OK" cancelText="Calcelar">
+          <ion-select-option  value="abacaxi">abacaxi</ion-select-option>
+          <ion-select-option  value="morango">morango</ion-select-option>
+          <ion-select-option value="abacaxi">abacaxi</ion-select-option>
+          <ion-select-option value="manga">manga</ion-select-option>
+        </ion-select>
+      </ion-item>
+  </ion-list>
+
+      <ion-item>
+          <ion-label>Popover</ion-label>
+          <ion-select [interfaceOptions]="customPopoverOption" interface="popover" placeholder="Selecione" value="morango" okText="OK" cancelText="Calcelar">
+            <ion-select-option  value="brown">Marrom</ion-select-option>
+            <ion-select-option  value="black">Preto</ion-select-option>
+            <ion-select-option value="red">Vermelho</ion-select-option>
+          </ion-select>
+        </ion-item>
+ 
+
+</ion-content>

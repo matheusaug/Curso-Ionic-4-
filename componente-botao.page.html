@@ -1,0 +1,78 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title> 
+        COMPONENTE - BOTÃO
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+<ion-button href="http://google.com">google</ion-button>
+<ion-button href="/componente" goBack>componente</ion-button>
+<ion-button color="primary">primary</ion-button>
+<ion-button color="secondary">secondary</ion-button>
+<ion-button color="tertiary">tertiary</ion-button>
+<ion-button color="success">Success</ion-button>
+<ion-button color="warning">warning</ion-button>
+<ion-button color="danger">danger</ion-button>
+<ion-button color="light">ligth</ion-button>
+
+<ion-button color="medium">medium</ion-button>
+<ion-button color="dark">dark</ion-button>
+<ion-button expand="full"> expand Full</ion-button>
+<ion-button expand="block"> expand block</ion-button>
+<ion-button round> Round Button</ion-button>
+<ion-button expand="full" fill="outline" > expand Full + Outline</ion-button>
+<ion-button expand="block" fill="outline"> outline + Block</ion-button>
+<ion-button round fill="outline"> Outline+ Round</ion-button>
+
+
+<ion-button color="danger">
+  <ion-icon name="star" slot="start" ></ion-icon>
+  Like
+</ion-button>
+
+<ion-button color="danger">
+    <ion-icon name="star" slot="end" ></ion-icon>
+    Like
+  </ion-button>
+
+  <ion-button>
+      <ion-icon slot="icon-only" name="star"></ion-icon>
+    </ion-button>
+
+    <ion-button color="dark" size="smal">Pequeno</ion-button>
+    <ion-button color="dark" >Tamanho Default</ion-button>
+    <ion-button color="dark" size="large">Grande</ion-button>
+
+    <ion-button color="whithi" size="large">
+     <ion-img src="/assets/imagem/3.PNG"   ></ion-img>
+    </ion-button>
+<!--
+    <ion-content padding class=”loginPage” scroll=”false”>
+        <ion-list>
+      
+          <ion-item>
+            <ion-label position="floating">Nome</ion-label>
+            <ion-input type="text" [(ngModel)] = "nome"></ion-input>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label position="floating">Senha</ion-label>
+            <ion-input type="password" [(ngModel)] = "senha"></ion-input>
+          </ion-item>
+      
+        </ion-list>
+      
+        <ion-button fill="solid" expand="block" color="dark" (click)="login()">Logar</ion-button>
+        <ion-button fill="outline" expand="block" color="success" (click)="encaminharRegister()">
+            <ion-icon slot="start" name="add"></ion-icon>
+            Fazer cadastro
+        </ion-button>
+      </ion-content>
+-->
+
+</ion-content>
